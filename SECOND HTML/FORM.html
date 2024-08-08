@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="">Name: </label>
+        <input id="name" type="text" required minlength="4" maxlength="6">
+
+        <label for="">email: </label>
+        <input id="email" class="form-inputs" type="email"required>
+
+        <label for="">Number: </label>
+        <input type="number" required min="4" max="10">
+
+        <button>Submit</button>
+    </form>
+    <h1>Movies</h1>
+    <ul type="square">
+        <li>Bollywood
+            <ul type="disc">                            <!--nested list-->
+                <li>Mai hoo na</li>
+                <li>Sholay</li>
+                <li>PK</li>
+            </ul>
+        </li>
+        <li>Hollywood</li>
+        <ul>
+            <li>Fast and furious</li>
+            <li>Conjuring 3</li>
+        </ul>
+    </ul>
+
+    <hr>
+
+    <h1>FOOD</h1>
+    <ol type="A" start="27">   <!--starts = list kha se start hogi type=" write num only(here 27 = 'a')"-->
+        <li>Pau bhaji</li>
+        <ol type="i">
+            <li>Tasty</li>
+        </ol>
+        <li>DOSA</li>
+        <ol type="i">
+            <li>Very tasty</li>
+        </ol>
+    </ol>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cLz2fv4nuk0?si=lROD0qlzKsxECimx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+</body>
+</html>
