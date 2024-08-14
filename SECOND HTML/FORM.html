@@ -6,18 +6,38 @@
     <title>Document</title>
 </head>
 <body>
+
     <form>
-        <label for="">Name: </label>
-        <input id="name" type="text" required minlength="4" maxlength="6">
-
-        <label for="">email: </label>
+        <fieldset>
+            <legend>User Form</legend>         <!-- here legend tag is used to styling the form and take multiple things like mail, num , ask questions also... -->
+            <fieldset>
+            <label for="name">Name: </label>
+        <input id="name" type="text" name="user" required minlength="4" maxlength="6">
+        <br> <br>
+        <label for="email">email: </label>
         <input id="email" class="form-inputs" type="email"required>
-
+        <br> <br>
         <label for="">Number: </label>
         <input type="number" required min="4" max="10">
+        </fieldset>
+        <br> <br>
+        <input type="radio" name="q1" id="">            <!-- q1 = to check only the one option...-->
+        <label for="">Male</label>
+        <br>
+        <input type="radio" name="q1" id="">
+        <label for="radio">Female</label>
 
+        <br> <br>
+
+        <select name="dropdoown" id="">
+            <option value="none">Male</option>
+            <option value="none">Female</option>
+        </select>
+        <br> <br>
         <button>Submit</button>
+        </fieldset>
     </form>
+
     <h1>Movies</h1>
     <ul type="square">
         <li>Bollywood
