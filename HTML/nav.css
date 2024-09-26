@@ -1,0 +1,46 @@
+*{                                          /*  Universal selector */
+    margin:0;
+    padding:0;
+}
+header{
+    position:fixed;
+    top:0;
+    background-color: #0d1b2a;
+    width:100vw;
+}
+
+#logo>img{
+    height:100px;
+}
+header>nav{
+    display:flex;
+    justify-content: space-between;     /* horizontally center*/
+    align-items:center;     /* vertically center */
+    padding:0 7% 0 2%;     /* padding is in the top and right bottom left*/
+}
+#nav-items>ul{
+    display:flex;
+    gap: 15px;
+}
+#nav-items a{
+    color:white;
+    font-size:24px;
+    text-decoration:none;               /* remove underline*/
+}
+#nav-items a:hover{
+    padding:3px;
+    border-bottom: 2px solid white;
+}
+
+#hero{
+    height:99vh;
+    margin-top:104px;
+    border:solid rgb(245, 110, 110);
+    background:linear-gradient(#b874e8,pink,blue);
+    background-image:url("https://images.unsplash.com/photo-1487147264018-f937fba0c817?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+.head{
+    text-align:center;
+}

@@ -1,0 +1,28 @@
+#container{
+    width:80vw;
+    height:60vh;
+    border: 2px solid;
+    display:grid;
+  /*  grid-template-columns: 1fr 1fr 1fr;        columns makings */
+    grid-template-columns: repeat(4,1fr); /* 3 = row and size = 1fr */
+    grid-template-rows: repeat(3,1fr);
+}
+#container>div{
+    border:2px solid pink;
+}
+
+/* CHILD PROPERTY */
+#container>div:nth-of-type(2){
+    background-color:  blueviolet;
+    grid-column-start: 2;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+#container>div:nth-of-type(5){
+    background-color: pink;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end: 4;
+}
