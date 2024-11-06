@@ -120,3 +120,97 @@ function first(a,b){
 }
 let result = first();
 console.log(result);
+
+
+let ans1 = arrow(5,10);
+console.log(ans);
+const arrow = (a,b) =>{
+    console.log("arrow function");
+    return a+b;
+}
+
+// hoistiong question :
+
+let result2 = fun1(b,8);
+console.log(result2);
+console.log(b);
+var b = 10;
+function fun(x,y){
+    return x+y;
+
+}
+let ans2 = fun1(b,5);
+console.log(ans2);  // ans2 = 15...
+
+// let a;
+console.log();  // undefined..
+console.log("29"+10); // 2910... concat...
+
+let a;
+let ans = fun();
+console.log(a);
+a=10;
+console.log(ans);
+function fun(){
+    let b = 20;
+    console.log(b);
+    return "hoistiing";
+}
+console.log(b);
+
+// let a = 10;
+
+if(a=="10"){
+    console.log(true);
+}
+else{
+    console.log(false);
+}
+
+if(a==="10"){
+    console.log(true);
+}
+else{
+    console.log(false);
+}
+let a1 = 20;
+if(a1=="20" || a1==="20" && a1==100/10 && 1000/10){
+    console.log(true);
+}
+else{
+    console.log(false);
+}
+
+a==="20"?console.log(true):console.log(false);
+
+let ans3 = a=="10"?(a==="10"?"string":"number"):"not equal";
+
+let d = prompt("enter number");
+console.log(d);
+
+// check if num is +ve , -ve , string ?
+
+function checkInput(input) {
+    // method-1 :
+
+    if (typeof input === 'number') {
+        if (input > 0) {
+            console.log("positive number");
+        } else if (input < 0) {
+            console.log("negative number");
+        } else {
+            console.log("zero");
+        }
+    } else if (typeof input === 'string') {
+        console.log("string");
+    } else {
+        console.log("not recognized");
+    }
+} 
+// method-2 :
+let c = d==0?"0":(d<0?"-ve":(d>0?"+ve":"string"));
+
+
+
+
+console.log("test",0<"10t"); 
