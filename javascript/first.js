@@ -214,3 +214,80 @@ let c = d==0?"0":(d<0?"-ve":(d>0?"+ve":"string"));
 
 
 console.log("test",0<"10t"); 
+function cb(){
+    console.log("callback function executed");
+    return " return from cb";
+}
+ function higher(callback){
+    let result = callback();
+    console.log(result);
+    console.log("higher order function");
+    return "higher order function"
+ }
+
+ console.log(higher(cb));
+
+function figure2(){
+    console.log("figure2 executing");
+    return function(){
+        console.log("figure2 callback executed");
+        return "callback function";
+    }
+}
+
+let result1 = higher2();
+console.log(result1);
+
+let arr=[1,2,3,4,5];
+function square(x){
+    return x;
+}
+
+let sqrarr = arr.map(square);
+console.log(sqarr);
+console.log(arr);
+
+function mapOverview(arr,cb){
+    let a = [];
+    for(let ele of arr){
+        a.push(cb(ele));
+    }
+    return a;
+}
+mapOverview(arr,square);
+console.log(arr);
+console.log(sqarr);
+
+
+let sqarr = arr.map((ele)=>{
+    return ele*ele;
+})
+
+const even = arr.filter((ele)=>{
+    return ele%2;       
+})
+const even1 = arr.filter((ele)=>{
+    return !(ele%2);
+})
+
+arr = [1,2,3,4,5];
+let total = arr.reduce((accum,ele)=>{
+    return accum+ele;
+},0);
+
+let foundEle = arr.find((ele)=>{
+    return ele%5;
+})
+
+let sorted = arr.sort();
+console.log(sorted);
+
+console.log("start");
+settimer(()=>{
+    2000});
+    console.log("end");
+
+setInterval(()=>{
+    console.log("setinterval");
+2000})
+
